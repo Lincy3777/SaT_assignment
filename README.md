@@ -6,10 +6,10 @@ Clicking on the "Contact" link will take you to a page that displays all the con
 ## output
 
 ![Screenshot 2024-05-01 151245](https://github.com/Lincy3777/SaT_assignment/assets/156225992/0b1891db-3e84-4789-9392-e63fd70bc554)
-All the hyperlinks and the icons in the logo have some transitions to create smooth and gradual changes in the appearance of elements, this is achieve using css.
+All the hyperlinks and the icons in the logo have some transitions to create smooth and gradual changes in the appearance of elements, this is achieved using css.
 ##### code snippet for the same are as follows
-/* Hover affect on social Logo icons */
-.logo i:hover{
+// Hover affect on social Logo icons 
+.logo i:hover{<br>
     opacity: 1; 
     transition: opacity 0.0s ease; 
     opacity: 0;
@@ -38,10 +38,15 @@ button a:hover{
 All the social media icons direct the user to my linkedin profile
 ![Screenshot 2024-05-01 151741](https://github.com/Lincy3777/SaT_assignment/assets/156225992/6db28c68-6d30-434d-b19d-28416b896689)
 Using bootstrap I have achieve a proper structure for all the elements. I have used font awesome icons for a smooth visual appearance of elements.
+
 ![Screenshot 2024-05-01 163214](https://github.com/Lincy3777/SaT_assignment/assets/156225992/36ba47b2-24e7-4a10-a22e-fee841295037)
-The main element used in this page is the <form>tag which helps in making the webpage accessible for people with disability. 
-<body onload="document.registration.uname.focus();"> once the page loads this piece of code used to focus on the input field name. It helps in improving the usability and enchance accessibility.
-![Screenshot 2024-05-01 163444](https://github.com/Lincy3777/SaT_assignment/assets/156225992/f86ab340-dd78-4783-918f-660e42ec08f1)
+
+The main element used in this page is the &lt; form &gt; tag which helps in making the webpage accessible for people with disability. 
+&lt; body onload="document.registration.uname.focus();" &gt; once the page loads this piece of code used to focus on the input field name. It helps in improving the usability and enchance accessibility.
+    
+![Screenshot 2024-05-01 163444](https://github.com/Lincy3777/SaT_assignment/assets/156225992/365e5f30-f187-4cf1-b75c-8e19534e9b62)
+
+    
 In this, once the order is placed an order summary is displayed using jquery. 
   
   ##### code snippet for the same is as follows

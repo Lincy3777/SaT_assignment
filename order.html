@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body{
+            background:rgb(203, 149, 208);
+        }
+    </style>
+</head>
+<body>
+    <h1><a href="index.html"><i class="fa-solid fa-arrow-left" title="Back to home page"></i></a>
+        &nbsp;&nbsp;&nbsp;<b>Place Your Order</b></h1>
+        <h3> <center>Refer to our menu for details</center></h3><br><br>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2">&nbsp;</div>
+                <div class="col-sm-4">
+                    <label for="items">Name the items:</label>
+                </div>
+                <div class="col-sm-4"><input type="text" name="items" id="items" placeholder="Enter the items" size="17"></div>
+                <div class="col-sm-2">&nbsp;</div>
+            </div><!--row ends --><br>
+            <div class="row">
+                <div class="col-sm-2">&nbsp;</div>
+                <div class="col-sm-4">
+                    <label for="itemQ">Quantity:</label>
+                </div>
+                <div class="col-sm-4"><input type="number" name="itemQ" id="itemQ" placeholder="Quantity of items" size="20"></div>
+                <div class="col-sm-2">&nbsp;</div>
+            </div><!--row ends --><br>
+            <div class="row">
+                <div class="col-sm-2">&nbsp;</div>
+                <div class="col-sm-4">
+                    <label for="add-ons">Add-ons:</label>
+                </div>
+                <div class="col-sm-4"><input type="text" name="add-ons" id="add-ons" placeholder="Add-ons you would like to have" size="27"></div>
+                <div class="col-sm-2">&nbsp;</div>
+            </div><!--row ends --><br>
+            <div class="row">
+                <div class="col-sm-2">&nbsp;</div>
+                <div class="col-sm-4">
+                    <label for="beverage">Beverages:</label>
+                </div>
+                <div class="col-sm-4"><input type="text" name="beverage" id="beverage" placeholder="Beverage you would like to have" size="27"></div>
+                <div class="col-sm-2">&nbsp;</div>
+            </div><!--row ends --><br>
+            <div class="row">
+                <div class="col-sm-2">&nbsp;</div>
+                <div class="col-sm-4">
+                    <label for="bevQuantity">Quantity:</label>
+                </div>
+                <div class="col-sm-4"><input type="number" name="Quantity" id="bevQuantity" placeholder="Quantity of items" size="15"></div>
+                <div class="col-sm-2">&nbsp;</div>
+            </div><!--row ends --><br>
+            <div class="row">
+                <div class="col-sm-4">&nbsp;</div>
+                <div class="col-sm-4"><input type="button" name="placeOrder" id="order-button" value="Place Order"></div>
+                <div class="col-sm-4" id="orderSummary">&nbsp;</div>
+            </div><!--row ends -->
+            
+        </div><!--container ends -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#order-button').click(function(){
+                var item = $("#items").val();// fetching the value of items via id into the new variable item using .val()
+                var itemQuantity = $("#itemQ").val();
+                var addOns = $("#add-ons").val();
+                var beverage =$("#beverage").val();
+                var bevQuantity = $("#bevQuantity").val();
+                var summary = "You order "+ itemQuantity + " " + item + " and add-on " + addOns + " with "+ bevQuantity +" "+beverage ;
+                $('#orderSummary').text(summary);
+            });
+        });
+    </script>
+
+</body>
+</html>

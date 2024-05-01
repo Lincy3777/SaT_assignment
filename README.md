@@ -60,4 +60,4 @@ In this, once the order is placed an order summary is displayed using jquery.
                 $('#orderSummary').text(summary);<br>
             });<br>
         });<br>
-    </script>
+</script>

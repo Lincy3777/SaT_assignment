@@ -8,11 +8,11 @@ Clicking on the "Contact" link will take you to a page that displays all the con
 ![Screenshot 2024-05-01 151245](https://github.com/Lincy3777/SaT_assignment/assets/156225992/0b1891db-3e84-4789-9392-e63fd70bc554)
 All the hyperlinks and the icons in the logo have some transitions to create smooth and gradual changes in the appearance of elements, this is achieved using css.
 ##### code snippet for the same are as follows
-// Hover affect on social Logo icons 
+// Hover affect on social Logo icons <br>
 .logo i:hover{<br>
-    opacity: 1; 
-    transition: opacity 0.0s ease; 
-    opacity: 0;
+    opacity: 1; <br>
+    transition: opacity 0.0s ease; <br>
+    opacity: 0;<br>
 } 
 /* Hover affect on links */
 li a:hover{
